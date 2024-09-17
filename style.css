@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height:600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    font-size: 1.5rem;
+    font-family: sans-serif;
+    background-color: pink;
+}
+h1{
+    color: hotpink;
+    position: fixed;
+    top: 0;
+    padding-top: 1rem;
+}
+#container{
+    border: 3px solid pink;
+    width: 90%;
+    padding: 5rem;
+    text-align: center;
+    border-radius: 1rem;
+}
+.buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+.fa-solid{
+    font-size: 1.3rem;
+}
+.author{
+    margin: 2rem 0 2rem 0;
+    font-style: italic;
+}
+.img{
+    height: 100px;
+}
+.generator-btn{
+    padding: 0.5rem;
+    border-radius: 1rem;
+    border: 1px solid black;
+    background: none;
+    
+}
+.generator-btn:hover{
+    cursor: pointer;
+    background-color: pink;
+    box-shadow: 2px 2px 3px black;
+}
+
+.copy-btn:hover,.audio-btn:hover{
+    color: rgb(255, 106, 131);
+    cursor: pointer;
+}
+#loader{
+    margin-top: 1rem;
+    border-top: 10px solid black;
+    border-bottom: 10px solid hotpink;
+    border-left: 10px solid hotpink;
+    border-right: 10px solid hotpink;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    animation-name: myloader;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+}
+@keyframes myloader{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
